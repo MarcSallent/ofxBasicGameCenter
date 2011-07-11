@@ -1,16 +1,22 @@
-ofxBasicGameCenter Install instructions
+ofxBasicGameCenter instructions
+This is essentially a compilation of functions, modified to play nicely with openFrameworks
 
-1.- Include these two files to your project: 
+Marc Sallent - 
+http://wechoosefun.com/
+ 
+
+1.- Enable Game Center for your application on iTunes Connect
+
+2.- Create some test tables and achievements
+
+3.- Fill correctly your ofxiphone-Info.plist with the details of your app. Specially:
+	Bundle identifier (usually something like com.yourdomain.yourapp)
+	Bundle name (usually something like 2VA3K3E3F1AF.com.yourdomain.yourapp)
+
+4.- Include these two files to your project: 
 	ofxBasicGameCenter.h
 	ofxBasicGameCenter.mm
 
-2.- WEAK-link to the Game Kit framework
+5.- WEAK-link to the Game Kit framework
 
-3.- in testApp.h:
-	
-	GameCenter_stuff * gameCenter
-
-4.- in testApp.mm:
-
-	// Report score:
-		
+6.- enjoy!
