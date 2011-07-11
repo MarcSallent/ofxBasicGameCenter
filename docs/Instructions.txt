@@ -1,0 +1,16 @@
+ofxBasicGameCenter Install instructions
+
+1.- Include these two files to your project: 
+	ofxBasicGameCenter.h
+	ofxBasicGameCenter.mm
+
+2.- WEAK-link to the Game Kit framework
+
+3.- in testApp.h:
+	
+	GameCenter_stuff * gameCenter
+
+4.- in testApp.mm:
+
+	// Report score:
+		

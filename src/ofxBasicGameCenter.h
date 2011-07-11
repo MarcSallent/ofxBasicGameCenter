@@ -5,6 +5,7 @@
  
  Marc Sallent - http://wechoosefun.com/
  
+ This is essentially a compilation of functions, modified to play nicely with openFrameworks
  
  This program is free software: you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by

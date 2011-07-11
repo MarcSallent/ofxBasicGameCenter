@@ -5,6 +5,7 @@
  
  Marc Sallent - http://wechoosefun.com/
  
+ This is essentially a compilation of functions, modified to play nicely with openFrameworks
  
  This program is free software: you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
@@ -77,7 +78,6 @@ void ofxBasicGameCenter::reportScore(string _category, int score){
 }
 void ofxBasicGameCenter::reportAchievement(string _ach, float percent){
 	if (isAvailable()) {
-		cout << "reporting achievement " << _ach << "\n";
 		NSString * identifier = [NSString stringWithUTF8String: _ach.c_str()];
 			GKAchievement *achievement = [[[GKAchievement alloc] initWithIdentifier: identifier] autorelease];
 			if (achievement)
@@ -89,6 +89,5 @@ void ofxBasicGameCenter::reportAchievement(string _ach, float percent){
                      }
                 }];
 			}
-		cout << "achievement reported\n";
 	}
 }
